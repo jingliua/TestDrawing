@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C53CF5C81D2E254900D8AE85 /* YRView.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CF5C71D2E254900D8AE85 /* YRView.m */; };
+		C53CF5CB1D2E256900D8AE85 /* YRLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CF5CA1D2E256900D8AE85 /* YRLayer.m */; };
+		C53CF5CE1D2E258900D8AE85 /* CALayer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CF5CD1D2E258900D8AE85 /* CALayer+Extension.m */; };
 		C56A1F551D24B68C00C23042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C56A1F541D24B68C00C23042 /* main.m */; };
 		C56A1F581D24B68D00C23042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C56A1F571D24B68D00C23042 /* AppDelegate.m */; };
 		C56A1F5B1D24B68D00C23042 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C56A1F5A1D24B68D00C23042 /* ViewController.m */; };
@@ -20,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C53CF5C61D2E254900D8AE85 /* YRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRView.h; sourceTree = "<group>"; };
+		C53CF5C71D2E254900D8AE85 /* YRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRView.m; sourceTree = "<group>"; };
+		C53CF5C91D2E256900D8AE85 /* YRLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRLayer.h; sourceTree = "<group>"; };
+		C53CF5CA1D2E256900D8AE85 /* YRLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRLayer.m; sourceTree = "<group>"; };
+		C53CF5CC1D2E258900D8AE85 /* CALayer+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Extension.h"; sourceTree = "<group>"; };
+		C53CF5CD1D2E258900D8AE85 /* CALayer+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Extension.m"; sourceTree = "<group>"; };
 		C56A1F501D24B68C00C23042 /* TestDrawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDrawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56A1F541D24B68C00C23042 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C56A1F561D24B68C00C23042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +92,12 @@
 				C56A1F6B1D24B71A00C23042 /* CustomView.m */,
 				C56A1F941D24FA8200C23042 /* DrawedImageView.h */,
 				C56A1F951D24FA8200C23042 /* DrawedImageView.m */,
+				C53CF5C61D2E254900D8AE85 /* YRView.h */,
+				C53CF5C71D2E254900D8AE85 /* YRView.m */,
+				C53CF5C91D2E256900D8AE85 /* YRLayer.h */,
+				C53CF5CA1D2E256900D8AE85 /* YRLayer.m */,
+				C53CF5CC1D2E258900D8AE85 /* CALayer+Extension.h */,
+				C53CF5CD1D2E258900D8AE85 /* CALayer+Extension.m */,
 			);
 			path = TestDrawing;
 			sourceTree = "<group>";
@@ -171,7 +186,10 @@
 				C56A1F5B1D24B68D00C23042 /* ViewController.m in Sources */,
 				C56A1F6C1D24B71A00C23042 /* CustomView.m in Sources */,
 				C56A1F581D24B68D00C23042 /* AppDelegate.m in Sources */,
+				C53CF5CB1D2E256900D8AE85 /* YRLayer.m in Sources */,
 				C56A1F551D24B68C00C23042 /* main.m in Sources */,
+				C53CF5C81D2E254900D8AE85 /* YRView.m in Sources */,
+				C53CF5CE1D2E258900D8AE85 /* CALayer+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +338,7 @@
 				C56A1F691D24B68D00C23042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
