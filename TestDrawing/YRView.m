@@ -13,7 +13,8 @@
 说明了drawInContext里if([self.delegate responseToSelector:@selector(drawLayer:inContext:)])时就执行drawLayer:inContext:方法，这里我们因为实现了drawLayer:inContext:所以会执行
 4.[super drawLayer:layer inContext:ctx]会让系统自动调用此view的drawRect:方法
 至此self.layer画出来了
-5.在self.layer上再加一个子layer，当调用[layer setNeedsDisplay];时会自动调用此layer的drawInContext方法。drawInContext方法不能手动调用，只能通过这个方法让系统自动调用*/
+5.在self.layer上再加一个子layer，当调用[layer setNeedsDisplay];时会自动调用此layer的drawInContext方法。drawInContext方法不能手动调用，只能通过这个方法让系统自动调用
+6.如果drawRect不重写，就不会调用其layer的drawInContext方法，也就不会调用drawLayer:inContext方法*/
 
 #import "YRView.h"
 #import "YRLayer.h"
@@ -37,7 +38,7 @@
 }
 
 
-
+//如果drawRect不重写，就不会调用其layer的drawInContext方法，也就不会调用drawLayer:inContext方法
 -(void)drawRect:(CGRect)rect{
     NSLog(@"2-drawRect:");
     NSLog(@"drawRect里的CGContext:%@",UIGraphicsGetCurrentContext());//得到的当前图形上下文正是drawLayer中传递过来的
